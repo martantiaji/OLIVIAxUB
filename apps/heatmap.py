@@ -14,11 +14,11 @@ pertanian_path = "rencana pertanian.json"
 batas_path = "batas kecamatan.json"
 output_path = "peta_rencana_pertanian_dengan_legenda.html"
 
-with open(pertanian_path, "r", encoding="utf-8") as f:
-    pertanian_data = json.load(f)
-
-with open(batas_path, "r", encoding="utf-8") as f:
-    batas_data = json.load(f)
+def LULC():
+    with open(pertanian_path, "r", encoding="utf-8") as f:
+        pertanian_data = json.load(f)
+    with open(batas_path, "r", encoding="utf-8") as f:
+        batas_data = json.load(f)
 
 # ==============================
 # 2. Ambil Kategori dan Warna
